@@ -108,7 +108,7 @@ main[0].innerText=siteContent ["main-content"] ["features-h4"];
 main[1].innerText=siteContent ["main-content"] ["about-h4"];
 main[2].innerText=siteContent ["main-content"] ["services-h4"];
 main[3].innerText=siteContent ["main-content"] ["product-h4"];
-main[3].innerText=siteContent ["main-content"] ["vision-h4"];
+main[4].innerText=siteContent ["main-content"] ["vision-h4"];
 
 
 
@@ -118,7 +118,7 @@ main2[0].innerText=siteContent ["main-content"] ["features-content"];
 main2[1].innerText=siteContent ["main-content"] ["about-content"];
 main2[2].innerText=siteContent ["main-content"] ["services-content"];
 main2[3].innerText=siteContent ["main-content"] ["product-content"];
-main2[3].innerText=siteContent ["main-content"] ["vision-content"];
+main2[4].innerText=siteContent ["main-content"] ["vision-content"];
 
 
 
