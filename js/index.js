@@ -45,13 +45,16 @@ let mainImg = document.querySelector("#cta-img");
 mainImg.setAttribute('src', siteContent["cta"] ["img-src"])
 
 //new nav
-const newnav1 = document.createElement('h1');
+const newnav1 = document.createElement('a');
 newnav1.textContent = "New nav 1";
+newnav1.href="#";
+newnav1.style.color="green";
 
 
-const newnav2 = document.createElement('h1');
+const newnav2 = document.createElement('a');
 newnav2.textContent = "New nav 2"
-
+newnav2.href="#";
+newnav2.style.color="green";
 
 
 //nav cta
@@ -100,27 +103,80 @@ butn.innerText = siteContent ["cta"]["button"];
 
 //main content
 
-
-
-let fh4 = document.getElementsByTagName ("h4") [0];
-console.log (fh4);
-fh4.innerText = siteContent ["main-content"] ["features-h4"];
-
-let fp = document.getElementsByTagName ("p") [0];
-console.log (fp);
-fp.innerText = siteContent ["main-content"] ["features-content"];
+let main = document.querySelectorAll(".main-content h4");
+main[0].innerText=siteContent ["main-content"] ["features-h4"];
+main[1].innerText=siteContent ["main-content"] ["about-h4"];
+main[2].innerText=siteContent ["main-content"] ["services-h4"];
+main[3].innerText=siteContent ["main-content"] ["product-h4"];
+main[3].innerText=siteContent ["main-content"] ["vision-h4"];
 
 
 
 
-let ah4 = document.getElementsByTagName ("h4") [1];
-console.log (ah4);
-ah4.innerText = siteContent ["main-content"] ["about-h4"];
+let main2 = document.querySelectorAll(".main-content p");
+main2[0].innerText=siteContent ["main-content"] ["features-content"];
+main2[1].innerText=siteContent ["main-content"] ["about-content"];
+main2[2].innerText=siteContent ["main-content"] ["services-content"];
+main2[3].innerText=siteContent ["main-content"] ["product-content"];
+main2[3].innerText=siteContent ["main-content"] ["vision-content"];
 
-let ap = document.getElementsByTagName ("p") [1];
-console.log (ap);
-ap.innerText = siteContent ["main-content"] ["about-content"];
 
+
+//////////////// Single querySelector
+
+// let fh4 = document.querySelector(".main-content .text-content:nth-child(1) h4");
+// console.log (fh4);
+// fh4.innerText = siteContent ["main-content"] ["features-h4"];
+
+
+
+// let fp = document.querySelector(".main-content .text-content:nth-child(1) p");
+// // console.log (fp);
+// fp.innerText = siteContent ["main-content"] ["features-content"];
+
+
+
+// let ah4 = document.querySelector(".main-content .text-content:nth-child(2) h4");
+// // console.log (fh4);
+// ah4.innerText = siteContent ["main-content"] ["about-h4"];
+
+
+
+// let ap = document.querySelector(".main-content .text-content:nth-child(2) p");
+// // console.log (fh4);
+// ap.innerText = siteContent ["main-content"] ["about-content"];
+
+
+
+
+
+
+////////////// Single getElementBy
+
+
+
+// let fh4 = document.getElementsByTagName ("h4") [0];
+// console.log (fh4);
+// fh4.innerText = siteContent ["main-content"] ["features-h4"];
+
+// let fp = document.getElementsByTagName ("p") [0];
+// console.log (fp);
+// fp.innerText = siteContent ["main-content"] ["features-content"];
+
+
+
+
+// let ah4 = document.getElementsByTagName ("h4") [1];
+// console.log (ah4);
+// ah4.innerText = siteContent ["main-content"] ["about-h4"];
+
+// let ap = document.getElementsByTagName ("p") [1];
+// console.log (ap);
+// ap.innerText = siteContent ["main-content"] ["about-content"];
+
+
+
+//center image
 
 let mainlogo = document.getElementById("middle-img");
 mainlogo.setAttribute('src', siteContent["main-content"] ["middle-img-src"])
@@ -128,37 +184,37 @@ mainlogo.setAttribute('src', siteContent["main-content"] ["middle-img-src"])
 
 
 
-let servh4 = document.getElementsByTagName ("h4") [2];
-console.log (servh4);
-servh4.innerText = siteContent ["main-content"] ["services-h4"];
+// let servh4 = document.getElementsByTagName ("h4") [2];
+// console.log (servh4);
+// servh4.innerText = siteContent ["main-content"] ["services-h4"];
 
-let servp = document.getElementsByTagName ("p") [2];
-console.log (servp);
-servp.innerText = siteContent ["main-content"] ["services-content"];
-
-
-
-let prodh4 = document.getElementsByTagName ("h4") [3];
-console.log (prodh4);
-prodh4.innerText = siteContent ["main-content"] ["product-h4"];
-
-let prodp = document.getElementsByTagName ("p") [3];
-console.log (prodp);
-prodp.innerText = siteContent ["main-content"] ["product-content"];
+// let servp = document.getElementsByTagName ("p") [2];
+// console.log (servp);
+// servp.innerText = siteContent ["main-content"] ["services-content"];
 
 
 
+// let prodh4 = document.getElementsByTagName ("h4") [3];
+// console.log (prodh4);
+// prodh4.innerText = siteContent ["main-content"] ["product-h4"];
 
-let vis4 = document.getElementsByTagName ("h4") [3];
-console.log (vis4);
-vis4.innerText = siteContent ["main-content"] ["vision-h4"];
-
-let visp = document.getElementsByTagName ("p") [3];
-console.log (visp);
-visp.innerText = siteContent ["main-content"] ["vision-content"];
+// let prodp = document.getElementsByTagName ("p") [3];
+// console.log (prodp);
+// prodp.innerText = siteContent ["main-content"] ["product-content"];
 
 
-//contact
+
+
+// let vis4 = document.getElementsByTagName ("h4") [3];
+// console.log (vis4);
+// vis4.innerText = siteContent ["main-content"] ["vision-h4"];
+
+// let visp = document.getElementsByTagName ("p") [3];
+// console.log (visp);
+// visp.innerText = siteContent ["main-content"] ["vision-content"];
+
+
+// //contact
 
 let conth4 = document.getElementsByTagName ("h4") [5];
 console.log (conth4);
